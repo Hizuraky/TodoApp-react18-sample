@@ -41,12 +41,10 @@ export const TodoList: React.FC<Todo & { onClick?: () => void }> = ({
             <AiOutlineTags size={15} className="mr-1" />
             <span className="flex">
               {labels.map((label, i) => (
-                <>
-                  <p key={i}>
-                    {label}
-                    {i !== labels.length - 1 && ' / '}&nbsp;
-                  </p>
-                </>
+                <p key={i}>
+                  {label}
+                  {i !== labels.length - 1 && ' / '}&nbsp;
+                </p>
               ))}
             </span>
           </span>
